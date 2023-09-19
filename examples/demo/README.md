@@ -1,0 +1,4 @@
+### 调试准备工作
+1. github pull源码
+2. 在项目的example中建立demo文件夹编写调试脚本
+3. vscode中 配置node调试的launch.json
