@@ -1,3 +1,3 @@
-import { sum } from './utils'
+import { app } from './app'
 
-console.log('main.js===', sum(1, 2))
+console.log('main.js===', app())

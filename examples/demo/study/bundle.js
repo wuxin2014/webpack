@@ -1,23 +1,22 @@
  (() => { // webpackBootstrap
-  debugger
  	"use strict";
-  // 定义模块对象
+  	// 定义模块对象
  	var __webpack_modules__ = ({
-    "./src/utils.js":
-    ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-        __webpack_require__.r(__webpack_exports__);
-        // defineProperty => _webpack_exports
-        __webpack_require__.d(__webpack_exports__, {
-           sum: () => (/* binding */ sum),
-           uniue: () => (/* binding */ uniue)
-        });
-        const sum = (a, b) => {
-          return a + b;
-        };
-        const uniue = arr => {
-          return arr;
-        };
-    })
+		"./src/utils.js":
+		((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+			__webpack_require__.r(__webpack_exports__);
+			// defineProperty => _webpack_exports
+			__webpack_require__.d(__webpack_exports__, {
+			sum: () => (/* binding */ sum),
+			uniue: () => (/* binding */ uniue)
+			});
+			const sum = (a, b) => {
+			return a + b;
+			};
+			const uniue = arr => {
+			return arr;
+			};
+		})
  	});
  	// The module cache
  	var __webpack_module_cache__ = {};
@@ -25,11 +24,11 @@
  	// 加载函数
  	function __webpack_require__(moduleId) {
  		var cachedModule = __webpack_module_cache__[moduleId];
-    // 先取缓存有则返回
+    	// 先取缓存有则返回
  		if (cachedModule !== undefined) {
  			return cachedModule.exports;
  		}
-    // 无记录到缓存中
+    	// 无记录到缓存中
  		var module = __webpack_module_cache__[moduleId] = {
  			exports: {}
  		};
@@ -67,15 +66,15 @@
  		};
  	})();
  	
-  // 最开始执行函数
-  var __webpack_exports__ = {};
-  (() => {
-    __webpack_require__.r(__webpack_exports__);
-    // main.js中 import 那一行
-    var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/utils.js");
-    // 打印那一行
-    console.log('main.js===', (0,_utils__WEBPACK_IMPORTED_MODULE_0__.sum)(1, 2));
-  })();
+	// 最开始执行函数
+	var __webpack_exports__ = {};
+	(() => {
+		__webpack_require__.r(__webpack_exports__);
+		// main.js中 import 那一行
+		var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/utils.js");
+		// 打印那一行
+		console.log('main.js===', (0,_utils__WEBPACK_IMPORTED_MODULE_0__.sum)(1, 2));
+	})();
 })();
 
 // const sum = (a, b) => { return (a + b) }
