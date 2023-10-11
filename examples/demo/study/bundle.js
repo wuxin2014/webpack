@@ -7,14 +7,14 @@
 			__webpack_require__.r(__webpack_exports__);
 			// defineProperty => _webpack_exports
 			__webpack_require__.d(__webpack_exports__, {
-			sum: () => (/* binding */ sum),
-			uniue: () => (/* binding */ uniue)
+				sum: () => (/* binding */ sum),
+				uniue: () => (/* binding */ uniue)
 			});
 			const sum = (a, b) => {
-			return a + b;
+				return a + b;
 			};
 			const uniue = arr => {
-			return arr;
+				return arr;
 			};
 		})
  	});
