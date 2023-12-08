@@ -1,6 +1,9 @@
 import { app } from './app'
-import { loading } from './async'
 
 console.log('main.js===', app())
 
-loading()
+function loading() {
+    import(/* webpackChunkName: "async" */ './async').then(res => {
+        console.log('res====', res)
+    })
+}

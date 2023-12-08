@@ -2,12 +2,15 @@ const path = require("path");
 // const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
 	mode: "development",
-	devtool: "source-map",
+	// devtool: "source-map",
 	context: path.resolve(__dirname, "."),
-	entry: "./src/main.js",
+	entry: {
+		index: "./src/main.js"
+	},
 	output: {
-		filename: "bundle.js",
-		path: path.resolve(__dirname, "./dist")
+		filename: "[name].[chunkhash:8].js",
+		path: path.resolve(__dirname, "./dist"),
+		clean: true
 	},
 	module: {
 		rules: [
